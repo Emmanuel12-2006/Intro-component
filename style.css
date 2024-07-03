@@ -1,0 +1,307 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: fit-content;
+    background-image: url(banner.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.stg-1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stg-1 h1{
+    color: white;
+    font-size: 35px;
+}
+
+.stg-1 p{
+    font-size: 15px;
+    color: white;
+}
+
+.stg-2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stg-2 h5{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+    background-color: hsl(248, 32%, 49%);
+    text-decoration: none;
+    color:white;
+    margin-left: 5px;
+    font-weight: 700;
+    border-radius: 5px;   
+    font-size: 13px;
+    gap: 5px;
+}
+
+.after{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+form{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 20px;
+}
+
+form label{
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 180px;
+}
+
+.pwrd-err{
+    margin-left: 220px;
+}
+
+form span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+
+form input{
+    padding: 10px;
+    border:1px solid grey;
+    outline:none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button{
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    outline: none;
+    border: 1px solid hsl(154, 59%, 51%);
+    color: white;
+    cursor: pointer;
+}
+
+form h4{
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.crimson{
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+/* MOBILE DESIGN */
+@media(max-width:768px){
+    
+body{
+    width: 100%;
+    height: fit-content;
+    background-image: url(banner2.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stg-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stg-1 h1{
+    color: white;
+    font-size: 30px;
+}
+
+.stg-1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    padding: 0px 35px;
+}
+
+.stg-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stg-2 h5{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    background-color: hsl(248, 32%, 49%);
+    text-decoration: none;
+    color:white;
+    margin-left: 5px;
+    font-weight: 700;
+    border-radius: 5px;   
+    font-size: 13px;
+    gap: 10px;
+}
+
+.after{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+form{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+form label{
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+.pwrd-err{
+    margin-left: 140px;
+}
+
+form span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+
+form input{
+    padding: 10px;
+    border:1px solid grey;
+    outline:none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form button{
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    outline: none;
+    border: 1px solid hsl(154, 59%, 51%);
+    color: white;
+    cursor: pointer;
+}
+
+form h4{
+    width: 100%;
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+}
+
+.crimson{
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 50px; */
+}
+
+}
